@@ -1,0 +1,10 @@
+version: '3'
+services:
+
+  puppeteer:
+    container_name: node_puppeteer
+    image: node-puppeteer
+    build:
+      context: .
+    volumes:
+      - .:/code
